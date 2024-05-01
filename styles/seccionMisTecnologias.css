@@ -1,0 +1,78 @@
+.tituloTecnologias {
+  font-weight: 900;
+  margin-left: 30px;
+  font-size: 40px;
+  margin: 30px 0 0 20px;
+}
+.subTtituloTecnologias {
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 20px;
+}
+.contenedorTecnologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  gap: 10px;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: var(--border-double);
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+}
+
+.imgTecnologias {
+  width: 200px;
+  height: 200px;
+  animation: fade-in 1.5s ease-out;
+  transition: transform 0.3s ease-out;
+  opacity: 0.7;
+}
+.imgTecnologias:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+.descripcionTecnologias {
+  font-weight: bold;
+  width: 340px;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+}
+.descripcionTecnologias:first-letter {
+  font-size: 75px;
+  font-weight: 800;
+  font-family: "UnifrakturMaguntia", cursive;
+}
+@media screen and (max-width: 600px) {
+  .tituloTecnologias {
+    font-size: 28px;
+  }
+  .subTtituloTecnologias {
+    font-size: 14px;
+  }
+  .contenedorTecnologias {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 500px;
+  }
+  .descripcionTecnologias {
+    width: 250px;
+    font-size: 18px;
+  }
+  .descripcionTecnologias:first-letter {
+    font-size: 45px;
+  }
+  .imgTecnologias {
+    width: 150px;
+    height: auto;
+  }
+}

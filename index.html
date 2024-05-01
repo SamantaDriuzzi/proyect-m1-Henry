@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PM1-SamantaDriuzzi</title>
+
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/header.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./styles/seccionQuienSoy.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./styles/seccionMisTecnologias.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./styles/seccionMisActividades.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="contenedorTituloSuperior">
+        <div class="lineaSuperior"></div>
+        <div class="tituloWeb">MI PÁGINA WEB</div>
+      </div>
+
+      <div class="contenedorTituloYData">
+        <div class="fecha">
+          <div>MARZO,</div>
+          <div>2024</div>
+        </div>
+        <div class="lineaUno"></div>
+        <!--Escribo 'Camanta' en lugar de 'Samanta' ya que se lee mejor por el tipo de letra -->
+        <div class="nombreDiario">Camantha</div>
+        <div class="lineaDos"></div>
+        <div class="mod">
+          <div>Mod.</div>
+          <div>1</div>
+        </div>
+      </div>
+      <div class="barraSeparadora">
+        <p class="barraSeparadoraTexto">www.driuzzi-s-web-ft-48.com</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección de Quién Soy -->
+      <section class="quienSoy">
+        <img
+          src="./assets/fotoSam.png"
+          alt="Foto de perfil de Samanta"
+          class="miImagen"
+        />
+        <div class="textoQuienSoy">
+          <div class="tituloSeccionQuienSoyA">
+            ¡Último momento! ¡GRAN GIRO PROFESIONAL!
+          </div>
+          <div class="tituloSeccionQuienSoyB">
+            DE VENDEDORA A DESARROLLADORA WEB
+          </div>
+          <div class="textoSeccionQuienSoy">
+            Soy Samanta, tengo 32 años y me encuentro experimentando una
+            emocionante transformación en mi carrera, tanto a nivel profesional
+            como personal.
+            <br />
+
+            Con más de una década de experiencia en ventas, marketing y atención
+            al cliente, he decidido dar un giro hacia el maravilloso mundo de la
+            programación.
+
+            <br />
+            Me apasionan los desafíos y la creatividad que esta disciplina
+            ofrece, así como la constante oportunidad de aprendizaje que ofrece.
+            Por esta razón, me he sumado felizmente a Henry, para alcanzar todas
+            mis metas y objetivos junto a grandes personas que están en el mismo
+            camino.
+          </div>
+        </div>
+      </section>
+
+      <!-- Separadores -->
+      <div class="barras"></div>
+      <div class="barras"></div>
+
+      <!-- Sección de Mis Tecnologías -->
+      <section class="misTecnologias">
+        <div class="tituloTecnologias">
+          ¡CRECE LA LISTA DE TECNOLOGIAS FAVORITAS!
+        </div>
+        <div class="subTtituloTecnologias">
+          Se espera que esta lista aumente en los próximos meses, lo
+          mantendremos informados.
+        </div>
+        <div class="contenedorTecnologias">
+          <!-- Tecnología 1 -->
+          <article>
+            <img
+              src="./assets/html.png"
+              alt="imagen de html"
+              class="imgTecnologias"
+            />
+            <p class="descripcionTecnologias">
+              Lo que más me gusta de HTML es su enfoque intuitivo y de fácil
+              comprensión. Me permite organizar la información de manera
+              jerárquica mediante etiquetas que definen la estructura del
+              contenido.
+            </p>
+          </article>
+
+          <!-- Tecnología 2 -->
+          <article>
+            <img
+              src="./assets/css.png"
+              alt="imagen de css"
+              class="imgTecnologias"
+            />
+            <p class="descripcionTecnologias">
+              Esta es otra de mis tecnologías favoritas. Como complemento
+              esencial de HTML, CSS se encarga de dar estilo y diseño a mis
+              páginas web, permitiéndome controlar la presentación visual de
+              manera eficiente.
+            </p>
+          </article>
+
+          <!-- Tecnología 3 -->
+          <article>
+            <img
+              src="./assets/js.png"
+              alt="imagen de js"
+              class="imgTecnologias"
+            />
+            <p class="descripcionTecnologias">
+              JavaScript es una herramienta fascinante en el mundo del
+              desarrollo web, y su inclusión en mi tarea me brinda la capacidad
+              de agregar dinamismo e interactividad a mis páginas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Separadores -->
+      <div class="barras"></div>
+      <div class="barras"></div>
+
+      <!-- Sección de Mis Actividades -->
+      <section class="seccionMisActividades">
+        <div class="tituloActividades">MIS ACTIVIDADES FAVORITAS</div>
+        <div class="subTtituloActividades">
+          Publica actividades y elimina las que no quieras que estén!
+        </div>
+        <div id="formularioActividad">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Nombre de la actividad" />
+
+          <label for="descripcion">Descripción:</label>
+          <textarea
+            id="descripcion"
+            placeholder="Descripción de la actividad"
+          ></textarea>
+
+          <label for="imagen">Imagen (URL):</label>
+          <input type="text" id="imagen" placeholder="URL de la imagen" />
+
+          <button id="agregarBtn" onclick="() => agregarActividadHandler()">
+            Agregar Actividad
+          </button>
+          <div id="actividadesContainer">
+            <!-- Las actividades se agregan acá dinámicamente -->
+          </div>
+        </div>
+        <script src="./scripts/clases.js"></script>
+        <script src="./scripts/index.js"></script>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+:root {
+  --color-background: #f5f5dc;
+  --color-border: #333;
+  --color-secundario: #33333375;
+  --border-double: 3px double #333;
+  --border-double-white: 5px double white;
+}
